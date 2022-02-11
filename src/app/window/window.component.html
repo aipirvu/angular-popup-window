@@ -1,1 +1,9 @@
-<p>window works!</p>
+<div class="window-header"
+     [ngClass]="{'window-header-down': isHeaderSelected }"
+     (mousedown)="startMoving($event)">
+  Header
+</div>
+<div class="window-body">
+  <ng-content>
+  </ng-content>
+</div>

@@ -1,0 +1,29 @@
+:host {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.window-header {
+  height: 25px;
+  width: 200px;
+  border: 1px solid darkgrey;
+  cursor: move;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.window-header.window-header-down {
+  background: red;
+}
+
+.window-body {
+  height: 100px;
+  width: 200px;
+  border: 1px solid darkgrey;
+}
