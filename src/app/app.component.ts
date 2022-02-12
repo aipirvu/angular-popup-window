@@ -7,7 +7,7 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-popup-window';
-  isWindowOpened = false;
+  isWindowOpened = true;
 
   openWindow(): void {
     this.isWindowOpened = true;

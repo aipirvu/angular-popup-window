@@ -6,4 +6,6 @@
 <div class="window-body">
   <ng-content>
   </ng-content>
+  <div class="window-resizer"
+       (mousedown)="startResizing($event)"></div>
 </div>

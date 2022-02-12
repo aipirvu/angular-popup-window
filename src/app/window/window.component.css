@@ -2,13 +2,19 @@
   position: absolute;
   left: 0;
   top: 0;
+  width: 700px;
+  height: 400px;
 }
 
 .window-header {
   height: 25px;
-  width: 200px;
-  border: 1px solid darkgrey;
+  width: auto;
+  border: 1px solid;
+  border-color: lightgrey lightgrey transparent lightgrey;
   cursor: move;
+  text-align: center;
+  padding-top: 5px;
+  background-color: lightgrey;
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -19,11 +25,33 @@
 }
 
 .window-header.window-header-down {
-  background: red;
+  background-color: darkgrey;
 }
 
 .window-body {
-  height: 100px;
-  width: 200px;
-  border: 1px solid darkgrey;
+  position: relative;
+  height: 100%;
+  width: auto;
+  border: 1px solid lightgrey;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px
+}
+
+.window-resizer {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 10px 10px;
+  border-color: transparent transparent lightgrey transparent;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: se-resize;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
